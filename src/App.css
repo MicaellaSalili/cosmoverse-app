@@ -1,0 +1,132 @@
+/* Global Styles */
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #131862, #546bab, #bea9de); /* Night sky gradient */
+  color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure no extra space above the navbar */
+.navbar {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+/* Header Styles */
+header {
+  background-color: rgba(19, 75, 112, 0.8);
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+/* Zodiac Grid */
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for a better fit */
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Zodiac Container */
+.zodiac-container {
+  text-align: center;
+  cursor: pointer;
+}
+
+.zodiac-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Zodiac Details */
+.zodiac-details {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto; /* Center the details section */
+}
+
+.zodiac-details h2 {
+  margin-bottom: 10px;
+}
+
+.zodiac-details p {
+  margin-bottom: 20px;
+}
+
+/* Back Button */
+button {
+  background-color: #134B70;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0d3c6d;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(19, 75, 112, 0.8);
+  color: #f4f4f4;
+  padding: 10px 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar horizontally */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Ensure positioning context */
+  top: 0; /* Reset any top positioning if needed */
+}
+
+
+.navbar.show {
+  display: flex; /* Show the navbar when the 'show' class is added */
+}
+
+.navbar-left .logo {
+  font-size: 1.8rem; /* Larger logo text */
+  font-weight: 600; /* Slightly less bold for a cleaner look */
+}
+
+.navbar-center {
+  display: flex;
+  gap: 25px; /* Increased gap for better spacing between links */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+  padding: 8px 16px; /* Adjusted padding for a more balanced look */
+  border-radius: 6px; /* Rounded corners for a consistent design */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  background-color: #0d3c6d; /* Darker hover color for better contrast */
+  color: #fff;
+}
